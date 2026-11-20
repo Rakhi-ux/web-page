@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Indian Knowledge Systems</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #fff8ed;
+        }
+
+        header {
+            background-color: #8b4513;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 35px;
+            background-color: #ffe0b2;
+        }
+
+        .hero h2 {
+            color: #8b4513;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 25px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 8px gray;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #8b4513;
+        }
+
+        button {
+            background-color: #8b4513;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Indian Knowledge Systems</h1>
+        <p>Explore the Rich Heritage of India</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#knowledge">Knowledge</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Welcome to Indian Knowledge Systems</h2>
+
+        <p>
+            Discover India's traditional knowledge,
+            culture, science and heritage.
+        </p>
+
+        <button onclick="showMessage()">
+            Explore More
+        </button>
+
+        <p id="message"></p>
+    </section>
+
+    <h2 id="knowledge" style="text-align:center;">
+        Traditional Knowledge of India
+    </h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Yoga</h3>
+            <p>
+                Yoga is an ancient Indian
+                tradition related to physical
+                and mental well-being.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Ayurveda</h3>
+            <p>
+                Ayurveda is a traditional
+                Indian system of knowledge
+                about health and wellness.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Mathematics</h3>
+            <p>
+                Ancient India made important
+                contributions to mathematics
+                and the number system.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Music</h3>
+            <p>
+                Indian classical music is
+                an important part of
+                India's cultural heritage.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Art and Culture</h3>
+            <p>
+                Indian paintings, dance
+                and architecture represent
+                our rich traditions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Literature</h3>
+            <p>
+                Ancient Indian literature
+                preserves knowledge,
+                stories and philosophy.
+            </p>
+        </div>
+
+    </div>
+
+    <section id="about" class="hero">
+        <h2>About This Project</h2>
+
+        <p>
+            This website is created to introduce
+            Indian traditional knowledge and
+            promote awareness of Indian heritage.
+        </p>
+    </section>
+
+    <footer>
+        <p>Indian Knowledge Systems</p>
+        <p>Created as a Web Designing Project</p>
+    </footer>
+
+    <script>
+
+        function showMessage() {
+
+            document.getElementById("message").innerHTML =
+            "Welcome! Explore the rich knowledge of India.";
+
+        }
+
+    </script>
+
+</body>
+</html>
